@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faTimes} from '@fortawesome/free-solid-svg-icons';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
 import {useTransition, animated} from 'react-spring';
-import {BrowserRouter as Router, Link} from 'react-router-dom';
 import NavigationMenu from './NavigationMenu';
 
 
@@ -25,13 +25,13 @@ function Navigation() {
 
   return (
     <nav>
-      <span className='text-xl cursor-pointer border-l-2 p-3 pl-5'>
-                <span className='text-xs pr-2'>Меню</span>
 
+      <span className='text-xl cursor-pointer border-l-2 p-3 pl-5'>
         <FontAwesomeIcon
-          icon={faBars}
+          icon={showMenu ? faTimes : faBars}
           onClick={() => setShowMenu( !showMenu )}
         />
+        <span className='text-xs font-light pl-2'>Меню</span>
       </span>
 
       {maskTransitions.map( ({item, key, props}) =>
@@ -41,8 +41,7 @@ function Navigation() {
           key={key}
           style={props}
           onClick={() => setShowMenu( false )}
-        >
-          ️</animated.div>
+        >️</animated.div>
       )}
 
       {menuTransitions.map( ({item, key, props}) =>

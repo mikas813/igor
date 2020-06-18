@@ -1,8 +1,8 @@
 import React from 'react';
 import Slider from 'infinite-react-carousel';
-import sliderImg1 from '../images/1.png';
-import sliderImg2 from '../images/2.png';
-import sliderImg3 from '../images/3.png';
+import sliderImg1 from '../images/1.jpg';
+import sliderImg2 from '../images/2.jpg';
+import sliderImg3 from '../images/3.jpg';
 
 
 export const SimpleSlider = () => (
@@ -17,21 +17,28 @@ export const SimpleSlider = () => (
       <img
         src={sliderImg1} alt=""/>
         <span className='absolute bg-gray-300 px-10 py-5 bottom-0 right-0 opacity-75 rounded'>
-          <h2>Заміна акумулятора</h2>
+          <h2>Заміна тач скріна!</h2>
         </span>
     </div>
     <div>
       <img
         src={sliderImg2} alt=""/>
       <span className='absolute bg-gray-300 px-10 py-5 bottom-0 right-0 opacity-75 rounded'>
-          <h2>Заміна акумулятора</h2>
+          <h2>Заміна дисплейного модуля!</h2>
         </span>
     </div>
     <div>
       <img
         src={sliderImg3} alt=""/>
       <span className='absolute bg-gray-300 px-10 py-5 bottom-0 right-0 opacity-75 rounded'>
-          <h2>Заміна акумулятора</h2>
+          <h2>Заміна акумулятора!</h2>
+        </span>
+    </div>
+    <div>
+      <img
+        src={sliderImg3} alt=""/>
+      <span className='absolute bg-gray-300 px-10 py-5 bottom-0 right-0 opacity-75 rounded'>
+          <h2>Перепайка гнізда зарядки!</h2>
         </span>
     </div>
   </Slider>

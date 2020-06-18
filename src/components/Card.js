@@ -1,30 +1,38 @@
 import React from 'react';
+import cardImage1 from '../images/card-1.jpg';
+import cardImage2 from '../images/card-2.jpg';
+import cardImage3 from '../images/card-3.jpg';
+
 
 export const Card = () => {
 
   const state = [
     {
-      title: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ex.',
-      image: 'https://media.4rgos.it/s/Argos/6014942_R_SET?$Main768$&w=620&h=620'
+      title: 'Термін ремонту від 1 дня',
+      text:  'Час ремонту смартфону від 1 до 5 днів у 90% звернень. (за наявновності запчастин)',
+      image: cardImage1
     },
     {
-      title: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ex.',
-      image: 'https://media.4rgos.it/s/Argos/6014942_R_SET?$Main768$&w=620&h=620'
+      title: 'Вартість ремонту від 250 грн.',
+      text:  'Виконуємо ремонт смартфонів будь-якої складності.',
+      image: cardImage2
     },
     {
-      title: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ex.',
-      image: 'https://media.4rgos.it/s/Argos/6014942_R_SET?$Main768$&w=620&h=620'
+      title: 'Гарантія 6 місяців',
+      text: 'Надаємо гарантію 6 місяців, виправимо повторну поломку абсолютно безкоштовно.',
+      image: cardImage3
     }
   ];
 
 
   return (
-    <div className='container sm:flex justify-around  mt-10 mb-10 text-xs'>
+    <div className='container md:flex justify-around  mt-10 mb-10'>
       {state.map( (card, index) => {
         return (
-          <div key={index} className=' border w-1/2 sm:w-1/4 m-auto mb-5 shadow-xl text-center bg-white'>
-            <img src={card.image} alt=""/>
-            <p className='p-3 border-t-2'>{card.title}</p>
+          <div key={index} className='m-auto  border w-1/2 md:w-1/4 mb-5 shadow-xl text-center bg-white'>
+            <img className='m-auto h-64' src={card.image} alt=""/>
+            <p className='mt-4 border-t-2 font-bold'>{card.title}</p>
+            <p className='p-3'>{card.text}</p>
           </div>
         );
       })}

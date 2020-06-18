@@ -35,6 +35,15 @@ function NavigationMenu(props) {
             Наші роботи
           </Link>
         </li>
+        <li className='shadow-sm pl-10 pr-10'>
+          <Link
+            to='/contact-us'
+            className='py-1 border-b block'
+            onClick={props.closeMenu}
+          >
+            Звяжіться з нами
+          </Link>
+        </li>
       </ul>
       <h3 className='text-center text-sm font-light mt-5 '>Швидко. Якісно. Надійно.</h3>
       <h2>FYD</h2>

@@ -1,15 +1,35 @@
 import React from 'react';
-import abouBg from '../images/about-bg.png'
+import abouBg from '../images/about-bg.jpg';
+import {Title} from '../components/MainTitle';
+import Footer from '../components/Footer';
+import {ContentWrapper} from '../components/ContentWrapper';
+import {Auxiliary} from '../components/Auxiliary';
+
+const aboutPageData = [
+  {
+    title: 'Про нас.',
+    aboutUsText: 'Ми здійснюємо гарантійне і після гарантійне обслуговування провідних брендів мобільних телефоніа та' +
+      ' планшетів. Практикуються термінові ремонти.' +
+      'Перекладіть Ваші проблеми в надійні та грамотні руки спеціалістів нашого спеціалізованого сервісного центру!'
+  }
+];
 
 function About() {
 
   return (
-    <div className='container mt-10 mb-40 m-auto shadow-xl'>
-      <h3 className='text-center p-5'>Про нас</h3>
-      <img src={abouBg} className='m-auto' alt=""/>
-      <p className='text-xs p-10 text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequatur eligendi facere id laborum libero minus officiis provident rerum sequi, sit tempore totam. Ab fugit ipsam laborum molestias, pariatur vel.</p>
-    </div>
+    <Auxiliary>
+      <ContentWrapper>
+        <div className="container shadow-xl pb-10 border-t-2 px-8 text-center m-auto">
+        <Title title={aboutPageData[0].title}/>
+          <img src={abouBg} className='m-auto' alt="Про нас."/>
+          <p className='text-xs p-10 text-center'>{aboutPageData[0].aboutUsText}</p>
+        </div>
+      </ContentWrapper>
+      <Footer/>
+    </Auxiliary>
   );
 }
 
-export default About
+export default About;
+
+

@@ -5,3 +5,13 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+
+#root {
+    position: relative;
+    min-height: 100vh;
+}
+
+.loader {
+    border: 5px
+}
