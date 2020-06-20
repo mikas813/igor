@@ -44,8 +44,10 @@ function NavigationMenu(props) {
             Звяжіться з нами
           </Link>
         </li>
+        <div className="m-2 fb-like" data-href="https://fix-yourdevice.web.app" data-width="100px" data-layout="button"
+             data-action="like" data-size="small" data-share="true"></div>
       </ul>
-      <h3 className='text-center text-sm font-light mt-5 '>Швидко. Якісно. Надійно.</h3>
+      <h2 className='text-center text-sm font-light mt-5 '>Швидко. Якісно. Надійно.</h2>
       <h2>FYD</h2>
       <img src={MenuBG} className='m-auto' alt=""/>
     </div>

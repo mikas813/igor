@@ -15,30 +15,30 @@ export const SimpleSlider = () => (
   >
     <div>
       <img
-        src={sliderImg1} alt=""/>
+        src={sliderImg1} alt="FixYouDevice Якісний ремонт смартфонів в Коломиї"/>
         <span className='absolute bg-gray-300 px-10 py-5 bottom-0 right-0 opacity-75 rounded'>
-          <h2>Заміна тач скріна!</h2>
+          <h2 className='text-xl'>Заміна тач скріна!</h2>
         </span>
     </div>
     <div>
       <img
-        src={sliderImg2} alt=""/>
+        src={sliderImg2} alt="FixYouDevice Якісний ремонт смартфонів в Коломиї"/>
       <span className='absolute bg-gray-300 px-10 py-5 bottom-0 right-0 opacity-75 rounded'>
-          <h2>Заміна дисплейного модуля!</h2>
+          <h2 className='text-xl'>Заміна дисплейного модуля!</h2>
         </span>
     </div>
     <div>
       <img
-        src={sliderImg3} alt=""/>
+        src={sliderImg3} alt="FixYouDevice Якісний ремонт смартфонів в Коломиї"/>
       <span className='absolute bg-gray-300 px-10 py-5 bottom-0 right-0 opacity-75 rounded'>
-          <h2>Заміна акумулятора!</h2>
+          <h2 className='text-xl'>Заміна акумулятора!</h2>
         </span>
     </div>
     <div>
       <img
-        src={sliderImg3} alt=""/>
+        src={sliderImg3} alt="FixYouDevice Якісний ремонт смартфонів в Коломиї"/>
       <span className='absolute bg-gray-300 px-10 py-5 bottom-0 right-0 opacity-75 rounded'>
-          <h2>Перепайка гнізда зарядки!</h2>
+          <h2 className='text-xl'>Перепайка гнізда зарядки!</h2>
         </span>
     </div>
   </Slider>

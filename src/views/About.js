@@ -23,6 +23,7 @@ function About() {
         <Title title={aboutPageData[0].title}/>
           <img src={abouBg} className='m-auto' alt="Про нас."/>
           <p className='text-xs p-10 text-center'>{aboutPageData[0].aboutUsText}</p>
+        <div className="fb-like" data-href="https://fix-yourdevice.web.app" data-width="100px" data-layout="button" data-action="like" data-size="small" data-share="true"></div>
         </div>
       </ContentWrapper>
       <Footer/>

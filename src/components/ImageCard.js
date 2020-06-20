@@ -4,7 +4,7 @@ function ImageCard(props) {
 
   const style = {
     maxWidth: '200px',
-    maxHeight: '200px',
+    maxHeight: '200px'
   };
 
   return (
@@ -12,10 +12,10 @@ function ImageCard(props) {
       <img
         onClick={props.showFullImage}
         src={props.image}
-        alt={props.alt}
+        alt='FixYouDevice Якісний ремонт смартфонів в Коломиї'
       />
     </div>
   );
 }
 
-export default ImageCard
+export default ImageCard;

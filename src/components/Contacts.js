@@ -5,7 +5,7 @@ export const Contacts = () => {
   return (
     <div className='sm:w-1/2 mt-10 px-5 w-full'>
       <h2 className='text-xl text-center mb-10'>Наші контакти.</h2>
-      <a href='tel:0636552443'  className='m-5'>
+      <a href='tel:0636552443' className='m-5'>
         <PhoneIcon/>
         &nbsp;
         0636552443</a>

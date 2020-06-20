@@ -18,13 +18,15 @@ function Header() {
            p-3 w-1/6'>
         <Link to='/'>
           <img style={{minWidth: '30px', height: '30px'}}
-          src={logo} alt="Logotype FYD"/>
+               src={logo} alt="Logotype FYD"/>
         </Link>
       </span>
 
-      <span className='text-black font-medium text-sm p-3 sm:'
-      >FixYourDevice
-      </span>
+      <Link to='/'>
+        <h1 className='text-black font-medium text-sm p-3 sm:'
+        >FixYourDevice
+        </h1>
+      </Link>
 
       <Navigation/>
     </header>
